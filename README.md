@@ -6,12 +6,12 @@ Parses all public solidity function (ABI functions) and finds its location in so
 ## How to run
 
 ```console
-cargo run -- --contract <path to contract/directory> --name <contract name>
+cargo run -- --contract <path to contract/directory> --name <contract name> --solc-ver <solidity version>
 ```
 
 for example:
 
 ```console
-cargo run -- --contract ./contract --name MainContract
-cargo run -- -c ./tests/contracts/token --name TestToken
+cargo run -- --contract ./contract --name MainContract --solc-ver 0.8.9
+cargo run -- -c ./tests/contracts/token --name TestToken --solc-ver 0.8.17
 ```

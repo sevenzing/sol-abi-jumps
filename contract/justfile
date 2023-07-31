@@ -1,0 +1,3 @@
+build:
+    python build.py
+    cat input.json | ../compilers/solc-v0.4.21 --standard-json | jq > output.json

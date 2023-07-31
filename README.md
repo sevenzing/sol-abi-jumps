@@ -12,7 +12,7 @@ cargo run -- --contract <path to contract/directory> --name <contract name> --so
 ## Examples
 
 ```console
-cargo run -- --contract ./contract --name MainContract --solc-ver 0.8.9
+$ cargo run -- --contract ./contract --name MainContract --solc-ver 0.8.9
 func_with_args(uint256)
 ./contract/main.sol:9
 
@@ -30,7 +30,24 @@ transferOwnership(address)
 ```
 
 ```console
-cargo run -- -c ./tests/contracts/token --name TestToken --solc-ver 0.8.17
+$ cargo run -- -c ./storage.sol --name Storage
+Array(address[])
+./storage.sol:26
+
+getName((string,uint256))
+./storage.sol:25
+
+retrieve_123123123123132()
+./storage.sol:22
+
+store(uint256)
+./storage.sol:14
+```
+
+
+
+```console
+$ cargo run -- -c ./tests/contracts/token --name TestToken --solc-ver 0.8.17
 allowance(address,address)
 ./tests/contracts/token/main.sol:336
 
